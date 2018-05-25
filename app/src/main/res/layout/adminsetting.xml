@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:id="@+id/frame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/md_blue_400">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_ic_drawer"
+                android:src="@drawable/ic_plus_white_36dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/piraa"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_left_white_48dp"
+                android:id="@+id/ic_back"
+                android:layout_gravity="left"
+                android:layout_centerVertical="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/relative">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/md_blue_900">
+
+            <gereh.pira.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/name"
+                android:textSize="20sp"
+                android:textColor="@color/md_white_1000"
+                android:text="آرایشگاه نیما"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <gereh.pira.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/name"
+                android:id="@+id/addres"
+                android:textSize="10sp"
+                android:textColor="@color/md_white_1000_75"
+                android:text="تهران | منطقه 2"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@color/md_blue_600"
+                    android:id="@+id/image_round"
+                    app:border_width="5dp"
+                    app:border_color="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:text="N"
+                    android:id="@+id/image_text"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/md_white_1000"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/relative"
+            android:layout_marginTop="15dp"
+            android:background="@color/md_blue_400"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@color/md_blue_900"
+            android:layout_below="@+id/relative"
+            android:id="@+id/cm_relatvie"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_white_36dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cm_img"/>
+
+            <gereh.pira.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنظیمات"
+                android:textColor="@color/md_white_1000"
+                android:layout_toLeftOf="@+id/cm_img"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cm_relatvie"
+        android:id="@+id/rel_work">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/clock"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"/>
+
+        <gereh.pira.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ساعات کار :"
+            android:id="@+id/work_time_text"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_start"
+        android:layout_below="@+id/work_time_text"
+        android:layout_centerHorizontal="true">
+
+        <gereh.pira.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="شروع :"/>
+
+        <gereh.pira.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_end"
+            android:textSize="15sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="پایان :"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/text_start"
+            android:layout_centerHorizontal="true">
+
+        <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_time"
+        android:layout_toRightOf="@+id/end_time"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_time"
+        android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="ذخیره"
+        android:id="@+id/btn_save_time"
+        android:textColor="@color/md_white_1000"
+        android:layout_below="@+id/rel_work"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"/>
+
+       </RelativeLayout>
+
+</FrameLayout>
+
+</RelativeLayout>

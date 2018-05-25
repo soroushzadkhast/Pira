@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/md_blue_400</item>
+        <item name="android:ratingBarStyle">@style/piraRatingBar</item>
+    </style>
+
+    <style name="Widget.TabWidget" parent="android:Theme">
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+
+    <style name="piraRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">18dip</item>
+        <item name="android:minWidth">8dip</item>
+        <item name="android:maxWidth">8dip</item>
+    </style>
+
+</resources>
